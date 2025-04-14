@@ -43,9 +43,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 	}	
 	
-    public void addCorsMappings(CorsRegistry registry) {
+	public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://192.168.0.145:4200") // Your Angular URL
+                .allowedOrigins("*") // Your Angular URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true)

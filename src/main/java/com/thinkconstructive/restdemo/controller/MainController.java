@@ -40,8 +40,8 @@ import javax.crypto.spec.IvParameterSpec;
 import java.util.HashMap;
 import java.util.Map;
 
+@CrossOrigin(origins = "*")
 @RestController
-@CrossOrigin(origins = "*") // Replace with your allowed origin
 public class MainController {
 
 	@Autowired
