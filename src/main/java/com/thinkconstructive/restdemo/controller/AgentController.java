@@ -19,7 +19,7 @@ import com.thinkconstructive.restdemo.model.Agent;
 import com.thinkconstructive.restdemo.service.AgentsService;
 import com.thinkconstructive.restdemo.service.CloudVendorService;
 
-@CrossOrigin(origins = "http://192.168.0.145:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/agents")
 public class AgentController {
